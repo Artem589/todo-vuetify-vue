@@ -17,10 +17,6 @@
       </v-btn>
     </div>
   </v-sheet>
-  <!-- :class="{ active: props.task.completed }" -->
-  <!-- <div width="50%" class="task d-flex justify-space-between my-4">
-
-  </div> -->
 </template>
 
 <script setup lang="ts">

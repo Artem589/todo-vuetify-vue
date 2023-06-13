@@ -1,0 +1,105 @@
+// перенести все из TaskStores.ts
+// файлы с маленькой буквы
+// 1 файл под  интерфейс
+// pinia composition api
+// export const useTaskStore = defineStore('TaskStores', () => {
+//     const state = {};
+//     const getters  = {};
+//     const actions = {};
+
+//     return { state, getters, actions}
+// })
+
+// Переписать url на переменную из .env
+// axios
+// ref()s become state properties
+// computed()s become getters
+// function()s become actions
+
+    <!-- <a href="/favicon.ico"></a>
+        <a :href="`${import.meta.BASE_URL}/favicon.ico`"></a> -->
+        <!-- <div>
+          {{ process.env }}
+        </div> -->
+
+        <!-- <a :href="alexLinkGit" target="_blank">секретная ссылка</a>-->
+
+
+        // export default defineComponent({
+//   name: "App",
+//   components: {
+//     Joblist,
+//   },
+//   setup() {
+//     const jobs = ref<Job[]>([
+//       {
+//         title: "shop worker",
+//         location: "Polustrovski",
+//         salary: 30,
+//         id: "1",
+//       },
+//       {
+//         title: "flower worker",
+//         location: "Nevskiy",
+//         salary: 3450,
+//         id: "2",
+//       },
+//       {
+//         title: "metro worker",
+//         location: "Piskarevsky",
+//         salary: 1000,
+//         id: "3",
+//       },
+//     ]);
+
+//     const order = ref<OrderTerm>("title");
+//     const handlerClick = (term: OrderTerm) => {
+//       order.value = term;
+//     };
+//     return {
+//       jobs,
+//       handlerClick,
+//       order,
+//     };
+//   },
+// });
+
+// import { defineComponent, reactive, toRefs, ref } from "vue";
+
+// export default defineComponent({
+//   setup() {
+//     // const state = reactive({
+//     //   name: "Link",
+//     //   age: 25 as number | string,
+//     // });
+
+//     // // state.name = 31312  cannot change type
+//     // state.age = 44;
+
+//     // return { ...toRefs(state) };
+//     // const name = ref("Link");
+//     // const age = ref<number | string>(25);
+
+//     // return {
+//     //   name,
+//     //   age,
+//     // };
+//   },
+//   methods: {
+//     changeName(name: string) {
+//       this.name = name;
+//       return name;
+//     },
+//     changeAge(age: number | string) {
+//       this.age = age;
+//       return age;
+//     },
+//   },
+// });
+
+// const props = defineProps({
+//   task: {
+//     type: Object as PropType<Task>,
+//     required: true,
+//   },
+// });

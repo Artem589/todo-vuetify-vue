@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-app>
+    <v-app class="d-flex justify-center">
       <main>
         <!-- heading -->
         <v-app-bar
@@ -21,7 +21,7 @@
           <TaskForm></TaskForm>
         </div>
         <!-- filter -->
-        <nav class="filter">
+        <nav class="filter d-flex justify-center">
           <v-btn
             elevation="2"
             class="text-capitalize"
@@ -136,8 +136,7 @@ header img {
 } */
 
 .filter {
-  width: 640px;
-  margin: 10px auto;
+  /* margin: 10px auto; */
 }
 
 .filter button {
@@ -152,7 +151,7 @@ header img {
 }
 
 .loading {
-  max-width: 640px;
+  /* max-width: 640px; */
   border: 1px solid #ffd859;
   background: #ffe9a0;
   color: #3a3a3a;
